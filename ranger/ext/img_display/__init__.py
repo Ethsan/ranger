@@ -14,16 +14,20 @@ from .displayer import (
     get_image_displayer,
     temporarily_moved_cursor,
     move_cur,
-    get_terminal_size,
     get_font_dimensions,
     image_fit_width,
     ImageDisplayer,
     ImageDisplayError,
     ImgDisplayUnsupportedException,
-    fallback_image_displayer,
     register_image_displayer,
-    get_image_displayer,
 )
+
+__all__ = [
+    "get_image_displayer",
+    "ImageDisplayer",
+    "ImageDisplayError",
+    "ImgDisplayUnsupportedException",
+]
 
 import base64
 import curses
